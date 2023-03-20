@@ -6,7 +6,10 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
-driver = webdriver.Chrome()
+# options_chrome = webdriver.ChromeOptions()
+# options_chrome.add_argument('--headless')
+
+driver = webdriver.Chrome(options=options_chrome)
 
 try:
     driver.maximize_window()
