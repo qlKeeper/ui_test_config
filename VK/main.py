@@ -9,7 +9,7 @@ from selenium.webdriver.common.keys import Keys
 # options_chrome = webdriver.ChromeOptions()
 # options_chrome.add_argument('--headless')
 
-driver = webdriver.Chrome(options=options_chrome)
+driver = webdriver.Chrome()
 
 try:
     driver.maximize_window()
